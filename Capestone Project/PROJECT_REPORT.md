@@ -326,6 +326,69 @@ Also confirm that the virtual environment is active:
 .\.venv\Scripts\Activate.ps1
 ```
 
+## Tools, Software, and Concepts Used
+
+This project uses the following tools, software, libraries, and software testing concepts:
+
+### Tools and Software
+
+- **Python 3.10 or later** – Used as the primary programming language.
+- **Requests Library** – Used to send HTTP requests to REST API endpoints.
+- **Behave BDD Framework** – Used to write and execute behavior-driven test scenarios.
+- **Allure Report** – Used to generate detailed and user-friendly test execution reports.
+- **Git and GitHub** – Used for source code management and project collaboration.
+- **Java** – Required for running the Allure Commandline tool.
+- **PowerShell** – Used to create the virtual environment, install dependencies, and execute tests.
+
+### Concepts Used
+
+- REST API testing
+- HTTP methods such as `GET`, `POST`, `PUT`, `PATCH`, and `DELETE`
+- API endpoints and request URLs
+- Request payloads and parameters
+- JSON response parsing
+- HTTP status code validation
+- Response body validation
+- Positive and negative test scenarios
+- Behavior-Driven Development using Gherkin syntax
+- Reusable step definitions
+- Test setup and teardown hooks
+- Test reporting and environment metadata
+- Assertions and test failure analysis
+- Python virtual environments and dependency management
+
+## Brief Result, Observation, and Conclusion
+
+### Result
+
+The API automation framework was implemented successfully using Python, Requests, Behave, and Allure. The test suite covers multiple REST API operations, including retrieving products, searching products with missing parameters, updating a non-existent account, and deleting an account.
+
+The tests validate:
+
+- HTTP status codes
+- JSON response codes
+- Response body messages
+- Request payload handling
+- Different HTTP request methods
+- API behavior for both valid and invalid requests
+
+### Observations
+
+- The Requests library provides a simple and effective way to communicate with REST APIs.
+- Behave feature files make the test scenarios easy to read and understand.
+- Reusable step definitions reduce duplicate code and make the framework easier to maintain.
+- The API consistently returns HTTP status code `200` while providing the actual operation result through the JSON `responseCode` field.
+- Negative test cases are useful for verifying how the API handles missing parameters and non-existent user accounts.
+- Allure captures request information, response data, execution metadata, environment details, and failure logs.
+- The framework requires an active internet connection because the tests use live Automation Exercise API endpoints.
+
+### Conclusion
+
+This project demonstrates the successful implementation of a reusable REST API automation framework using Python Requests, Behave BDD, and Allure reporting.
+
+The framework can validate API functionality, response status codes, JSON response content, and error-handling behavior. Its modular structure separates the API client, feature scenarios, step definitions, and test hooks, making the project easier to understand, maintain, and expand.
+
+Future improvements could include adding authentication testing, request headers, timeout handling, response schema validation, parameterized test data, logging, retry mechanisms, and integration with a continuous integration pipeline.
 Then reinstall the dependencies:
 
 ```powershell
