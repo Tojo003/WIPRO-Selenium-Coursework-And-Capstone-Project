@@ -22,3 +22,16 @@ Automate the **User Management API** of a sample REST service.
 
 2. Automation Exercise API List  
    https://automationexercise.com/api_list
+
+## Project File Structure
+
+```text
+Capstone Project/
+│
+├── api_client.py              <-- Handles all HTTP methods
+├── features/
+│   ├── environment.py         <-- Manages hooks & Allure environment metadata
+│   ├── api_tests.feature      <-- Feature file covering GET, POST, PUT, PATCH, DELETE
+│   └── steps/
+│       └── api_steps.py       <-- Reusable BDD step definitions
+```
