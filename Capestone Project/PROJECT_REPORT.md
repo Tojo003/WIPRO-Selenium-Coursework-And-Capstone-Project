@@ -6,7 +6,6 @@ Build a complete **API Automation Framework** using:
 
 - Python Requests Library
 - REST API Testing
-- Authentication
 - Behave BDD Framework
 - Allure Reporting
 - Reusable Framework Design
