@@ -51,7 +51,7 @@ Verify that Python, Java, and Allure are available in PowerShell:
 
 ```powershell
 python --version
-java -version
+java -showversion
 allure --version
 ```
 
